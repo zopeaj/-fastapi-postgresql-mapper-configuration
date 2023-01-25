@@ -9,8 +9,6 @@ from app.mappers.mapper_registrys import mapper_registry
 from app.models.User import User, user_table
 from sqlalchemy.orm import relationship
 
-# metadata_obj = MetaData()
-
 
 address_table = Table(
                    'address', mapper_registry.metadata,
