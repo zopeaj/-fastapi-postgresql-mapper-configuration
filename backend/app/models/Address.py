@@ -21,7 +21,7 @@ class Address:
     pass
 
 mapper_registry.map_imperatively(User, user_table, properties={
-    'address': relationship(Address, backref="user", order_by=address_table.c.id)
+    'addresses': relationship(Address, backref="user", order_by=address_table.c.id)
 })
 
 mapper_registry.map_imperatively(Address, address_table)
